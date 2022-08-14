@@ -30,7 +30,7 @@ export class UsersService {
     if(!user) {
       throw new NotFoundException('Usernot found')
     }
-    Object.assign(user, attrs);
+    Object.assign(user, attrs); 
 
     return this.repo.save(user);
   }
